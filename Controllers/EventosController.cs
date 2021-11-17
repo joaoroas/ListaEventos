@@ -42,6 +42,11 @@ namespace ListaEventos.Controllers
                 return NotFound();
             }
 
+            if(evento.User != User.Identity.Name) 
+            {
+                return NotFound();
+            }
+
             return View(evento);
         }
 
@@ -78,6 +83,11 @@ namespace ListaEventos.Controllers
 
             var evento = await _context.Eventos.FindAsync(id);
             if (evento == null)
+            {
+                return NotFound();
+            }
+
+            if (evento.User != User.Identity.Name)
             {
                 return NotFound();
             }
@@ -131,6 +141,11 @@ namespace ListaEventos.Controllers
             var evento = await _context.Eventos
                 .FirstOrDefaultAsync(m => m.EventoId == id);
             if (evento == null)
+            {
+                return NotFound();
+            }
+
+            if (evento.User != User.Identity.Name)
             {
                 return NotFound();
             }

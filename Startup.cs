@@ -63,7 +63,7 @@ namespace ListaEventos
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Eventos}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
