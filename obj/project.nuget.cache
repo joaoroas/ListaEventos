@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I76mx+7nNnHB15natqivOeBr+GyL9IhJf1do2FLWfOsg0lLp80UAoZrfnIB8cmCHB+ieLPXx8ylfTp8ai/Z/lQ==",
+  "dgSpecHash": "MXmBl8tjSr6iMOy6ljZC/7QaUw5vWVCBOp36b2GofmFO6x5J7rDt8iDXgr5MTBH0pi4+qpSCZpY06kZIR4F2dw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\joaor\\OneDrive\\Área de Trabalho\\PROJETOS\\ListaEventos\\ListaEventos\\ListaEventos.csproj",
+  "projectFilePath": "C:\\Users\\joaor\\OneDrive\\Área de Trabalho\\PROJETOS\\ListaEventos\\ListaEventos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joaor\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\joaor\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.12\\microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",

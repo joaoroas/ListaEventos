@@ -4,14 +4,16 @@ using ListaEventos.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ListaEventos.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211117184608_User")]
+    partial class User
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,9 +42,6 @@ namespace ListaEventos.Data.Migrations
 
                     b.Property<string>("Participantes")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("Privado")
-                        .HasColumnType("bit");
 
                     b.Property<string>("User")
                         .HasColumnType("nvarchar(max)");

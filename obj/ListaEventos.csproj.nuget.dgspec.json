@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joaor\\OneDrive\\Área de Trabalho\\PROJETOS\\ListaEventos\\ListaEventos\\ListaEventos.csproj": {}
+    "C:\\Users\\joaor\\OneDrive\\Área de Trabalho\\PROJETOS\\ListaEventos\\ListaEventos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joaor\\OneDrive\\Área de Trabalho\\PROJETOS\\ListaEventos\\ListaEventos\\ListaEventos.csproj": {
+    "C:\\Users\\joaor\\OneDrive\\Área de Trabalho\\PROJETOS\\ListaEventos\\ListaEventos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joaor\\OneDrive\\Área de Trabalho\\PROJETOS\\ListaEventos\\ListaEventos\\ListaEventos.csproj",
+        "projectUniqueName": "C:\\Users\\joaor\\OneDrive\\Área de Trabalho\\PROJETOS\\ListaEventos\\ListaEventos.csproj",
         "projectName": "ListaEventos",
-        "projectPath": "C:\\Users\\joaor\\OneDrive\\Área de Trabalho\\PROJETOS\\ListaEventos\\ListaEventos\\ListaEventos.csproj",
+        "projectPath": "C:\\Users\\joaor\\OneDrive\\Área de Trabalho\\PROJETOS\\ListaEventos\\ListaEventos.csproj",
         "packagesPath": "C:\\Users\\joaor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joaor\\OneDrive\\Área de Trabalho\\PROJETOS\\ListaEventos\\ListaEventos\\obj\\",
+        "outputPath": "C:\\Users\\joaor\\OneDrive\\Área de Trabalho\\PROJETOS\\ListaEventos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joaor\\AppData\\Roaming\\NuGet\\NuGet.Config",

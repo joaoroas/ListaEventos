@@ -19,5 +19,9 @@ namespace ListaEventos.Models
 
         public string Participantes { get; set; }
 
+        public string User { get; set;}
+
+        public bool Privado { get; set; }
+
     }
 }

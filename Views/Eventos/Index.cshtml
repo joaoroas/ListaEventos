@@ -27,6 +27,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.Participantes)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Privado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -47,6 +53,12 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Participantes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Privado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.EventoId">Edit</a> |

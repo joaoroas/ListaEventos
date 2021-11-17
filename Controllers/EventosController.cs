@@ -24,7 +24,7 @@ namespace ListaEventos.Controllers
         // GET: Eventos
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Eventos.ToListAsync());
+            return View(await _context.Eventos.Where(x =>x.User == User.Identity.Name ||x.Privado == false).ToListAsync());
         }
 
         // GET: Eventos/Details/5
@@ -56,10 +56,11 @@ namespace ListaEventos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EventoId,Nome,Descrição,Data,Local,Participantes")] Evento evento)
+        public async Task<IActionResult> Create([Bind("EventoId,Nome,Descrição,Data,Local,Participantes,Privado")] Evento evento)
         {
             if (ModelState.IsValid)
             {
+                evento.User = User.Identity.Name;
                 _context.Add(evento);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -88,7 +89,7 @@ namespace ListaEventos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("EventoId,Nome,Descrição,Data,Local,Participantes")] Evento evento)
+        public async Task<IActionResult> Edit(int id, [Bind("EventoId,Nome,Descrição,Data,Local,Participantes,Privado")] Evento evento)
         {
             if (id != evento.EventoId)
             {
@@ -99,6 +100,7 @@ namespace ListaEventos.Controllers
             {
                 try
                 {
+                    evento.User = User.Identity.Name;
                     _context.Update(evento);
                     await _context.SaveChangesAsync();
                 }
